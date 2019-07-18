@@ -1,0 +1,18 @@
+.plan {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin-bottom: 50px;
+}
+
+.item {
+  border: 2px solid #444;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 400px;
+  list-style: none;
+}

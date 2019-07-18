@@ -1,0 +1,31 @@
+.title {
+  margin: 0 auto;
+  color: #5e5c5c;
+}
+
+.item {
+  background-color: rgb(47, 212, 212);
+  list-style: none;
+  border: 1px solid #e4e9f0;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+  width: 100px;
+}
+
+.section {
+  margin: 50px auto;
+  border: 2px solid #e4e9f0;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}

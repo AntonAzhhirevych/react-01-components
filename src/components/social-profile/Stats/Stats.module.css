@@ -1,0 +1,17 @@
+.stats {
+  background-color: #f3f6f9;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.label {
+  min-width: 33%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border: 1px solid #e4e9f0;
+}
