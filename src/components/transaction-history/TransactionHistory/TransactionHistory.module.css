@@ -1,5 +1,5 @@
 .table {
-  border: 2px solid #e4e9f0;
+  border-collapse: collapse;
   margin: 0 auto;
 }
 
@@ -15,4 +15,10 @@
   color: #9b9494;
   text-align: center;
   border: 1px solid #e4e9f0;
+}
+
+.table,
+.tr,
+.td {
+  border: 1px solid black;
 }

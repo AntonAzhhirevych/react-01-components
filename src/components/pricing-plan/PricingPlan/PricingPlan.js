@@ -1,15 +1,16 @@
 import React from 'react';
-import PricingItem from '../PricingItem/PricingItem';
-import styles from '../PricingPlan/PricingPlan.module.css';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
+import PricingItem from '../PricingItem/PricingItem';
+import styles from './PricingPlan.module.css';
 
 const PricingPlan = ({ items }) => {
+  // console.log(item)
   return (
     <ul className={styles.plan}>
       {items.map(item => (
         <li key={shortid()} className={styles.item}>
-          <PricingItem item={item} />
+          <PricingItem {...item} />
         </li>
       ))}
     </ul>
@@ -17,7 +18,15 @@ const PricingPlan = ({ items }) => {
 };
 
 PricingPlan.propTypes = {
-  items: PropTypes.array.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      icon: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      capacity: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
+    }).isRequired,
+  ).isRequired,
 };
 
 export default PricingPlan;

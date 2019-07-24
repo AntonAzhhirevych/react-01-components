@@ -1,7 +1,7 @@
 import React from 'react';
-import StatsItem from '../StatsItem/StatsItem';
-import styles from '../Stats/Stats.module.css';
 import PropTypes from 'prop-types';
+import StatsItem from '../StatsItem/StatsItem';
+import styles from './Stats.module.css';
 
 const Stats = ({ title, items }) => {
   return (
@@ -10,7 +10,7 @@ const Stats = ({ title, items }) => {
       <ul className={styles.container}>
         {items.map(item => (
           <li key={item.id} className={styles.item}>
-            <StatsItem item={item} />
+            <StatsItem {...item} />
           </li>
         ))}
       </ul>
@@ -19,8 +19,13 @@ const Stats = ({ title, items }) => {
 };
 
 Stats.propTypes = {
-  title: PropTypes.string,
-  items: PropTypes.array.isRequired,
+  title: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }).isRequired,
+  ).isRequired,
 };
 
 export default Stats;

@@ -1,8 +1,6 @@
 import React from 'react';
-import styles from './Stats.module.css';
 import PropTypes from 'prop-types';
-
-console.log(styles);
+import styles from './Stats.module.css';
 
 const Stats = ({ followers, views, likes }) => {
   return (

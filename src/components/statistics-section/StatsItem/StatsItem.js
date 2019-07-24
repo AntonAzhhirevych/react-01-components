@@ -1,17 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const StatsItem = ({ item }) => {
+const StatsItem = ({ label, percentage }) => {
   return (
     <>
-      <span>{item.label}</span>
-      <span>{item.percentage}%</span>
+      <span>{label}</span>
+      <span>{percentage}%</span>
     </>
   );
 };
 
 StatsItem.propTypes = {
-  item: PropTypes.object.isRequired,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
 };
 
 export default StatsItem;

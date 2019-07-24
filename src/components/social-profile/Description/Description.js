@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Description.module.css';
 import PropTypes from 'prop-types';
+import styles from './Description.module.css';
 
 const Description = ({ src, name, tag, location, alt }) => {
   return (
@@ -22,6 +22,7 @@ Description.defaultProps = {
 };
 
 Description.propTypes = {
+  alt: PropTypes.string,
   src: PropTypes.string,
   name: PropTypes.string,
   location: PropTypes.string,
