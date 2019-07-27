@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
-import PricingItem from '../PricingItem/PricingItem';
+// import PricingItem from '../PricingItem/PricingItem';
 import styles from './PricingPlan.module.css';
 
 const PricingPlan = ({ items }) => {
@@ -10,7 +10,14 @@ const PricingPlan = ({ items }) => {
     <ul className={styles.plan}>
       {items.map(item => (
         <li key={shortid()} className={styles.item}>
-          <PricingItem {...item} />
+          <div className={styles.container}>
+            <img className={styles.img} src={item.icon} alt="pricing img" />
+            <h2>{item.label}</h2>
+            <p>{item.capacity}</p>
+            <p>{item.description}</p>
+            <p>{item.price}</p>
+            <button type="button">Get Started</button>
+          </div>
         </li>
       ))}
     </ul>

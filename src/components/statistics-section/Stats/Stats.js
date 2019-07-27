@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import StatsItem from '../StatsItem/StatsItem';
+// import StatsItem from '../StatsItem/StatsItem';
 import styles from './Stats.module.css';
 
 const Stats = ({ title, items }) => {
@@ -10,7 +10,8 @@ const Stats = ({ title, items }) => {
       <ul className={styles.container}>
         {items.map(item => (
           <li key={item.id} className={styles.item}>
-            <StatsItem {...item} />
+            <span>{item.label}</span>
+            <span>{item.percentage}%</span>
           </li>
         ))}
       </ul>

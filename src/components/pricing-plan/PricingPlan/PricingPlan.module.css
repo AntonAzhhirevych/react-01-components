@@ -16,3 +16,14 @@
   height: 400px;
   list-style: none;
 }
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 300px;
+}
+
+.img {
+  width: 100px;
+  margin-top: 30px;
+}
