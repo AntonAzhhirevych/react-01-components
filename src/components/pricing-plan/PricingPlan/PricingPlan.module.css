@@ -21,9 +21,24 @@
   margin: 0 auto;
   text-align: center;
   width: 300px;
+  background-color: #fff;
 }
 
 .img {
   width: 100px;
-  margin-top: 30px;
+  margin-top: 80px;
+}
+
+.item {
+  width: 350px;
+  height: 500px;
+  border: none;
+  background-color: #fff;
+}
+
+.button {
+  border: none;
+  padding: 10px 25px;
+  background-color: #ca532f;
+  color: #fff;
 }

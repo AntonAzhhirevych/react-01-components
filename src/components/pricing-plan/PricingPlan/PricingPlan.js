@@ -16,7 +16,10 @@ const PricingPlan = ({ items }) => {
             <p>{item.capacity}</p>
             <p>{item.description}</p>
             <p>{item.price}</p>
-            <button type="button">Get Started</button>
+            {}
+            <button className={styles.button} type="button">
+              Get Started
+            </button>
           </div>
         </li>
       ))}

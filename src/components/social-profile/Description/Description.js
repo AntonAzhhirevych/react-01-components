@@ -5,10 +5,10 @@ import styles from './Description.module.css';
 const Description = ({ src, name, tag, location, alt }) => {
   return (
     <div className={styles.description}>
-      <img className={styles.avatar} src={src} alt={alt} />
-      <p>{name}</p>
-      <p>@{tag}</p>
-      <p>{location}</p>
+      <img className={styles.img} src={src} alt={alt} />
+      <p className={styles.name}>{name}</p>
+      <p className={styles.text}>@{tag}</p>
+      <p className={styles.text}>{location}</p>
     </div>
   );
 };

@@ -4,7 +4,7 @@
   flex-direction: column;
   text-align: center;
   width: 250px;
-  border: 2px solid #e4e9f0;
+  background-color: #fff;
+  border-radius: 2px;
   margin-bottom: 100px;
-  padding: 5px;
 }

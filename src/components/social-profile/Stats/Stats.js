@@ -6,16 +6,16 @@ const Stats = ({ followers, views, likes }) => {
   return (
     <ul className={styles.stats}>
       <li className={styles.label}>
-        <span>followers</span>
-        <span>{followers}</span>
+        <span className={styles.text}>followers</span>
+        <span className={styles.desc}>{followers}</span>
       </li>
       <li className={styles.label}>
-        <span>Views</span>
-        <span>{views}</span>
+        <span className={styles.text}>Views</span>
+        <span className={styles.desc}>{views}</span>
       </li>
       <li className={styles.label}>
-        <span>Likes</span>
-        <span>{likes}</span>
+        <span className={styles.text}>Likes</span>
+        <span className={styles.desc}>{likes}</span>
       </li>
     </ul>
   );

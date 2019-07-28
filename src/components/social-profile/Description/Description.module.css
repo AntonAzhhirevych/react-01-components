@@ -1,20 +1,16 @@
-.avatar {
-  padding-top: 15px;
+.img {
+  margin-top: 25px;
   width: 100px;
   border-radius: 50%;
 }
 
-.description {
-  margin: 0;
-  padding: 0;
-}
-
 .name {
   font-size: 14px;
+  font-weight: 900;
+  color: #000000;
 }
-.tag {
+
+.text {
   font-size: 14px;
-}
-.location {
-  font-size: 14px;
+  color: #6e6e6e;
 }
