@@ -1,4 +1,3 @@
-import React from 'react';
 import PricingPlan from './PricingPlan/PricingPlan';
 import plan from './pricing-plan.json';
 

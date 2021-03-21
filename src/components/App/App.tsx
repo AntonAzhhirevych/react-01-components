@@ -1,5 +1,4 @@
-import React from 'react';
-import styles from './App.module.css';
+import './App.css';
 import FirsTask from '../social-profile/FirstTask';
 import SecondTask from '../pricing-plan/SecondTask';
 import ThirdTask from '../statistics-section/ThirdTask';
@@ -7,7 +6,7 @@ import ForthTask from '../transaction-history/FourthTask';
 
 const App = () => {
   return (
-    <div className={styles.container}>
+    <div className="container">
       <FirsTask />
       <SecondTask />
       <ThirdTask />

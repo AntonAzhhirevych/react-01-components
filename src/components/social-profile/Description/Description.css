@@ -1,16 +1,16 @@
-.img {
+.description-img {
   margin-top: 25px;
   width: 100px;
   border-radius: 50%;
 }
 
-.name {
+.description-name {
   font-size: 14px;
   font-weight: 900;
   color: #000000;
 }
 
-.text {
+.description-text {
   font-size: 14px;
   color: #6e6e6e;
 }
